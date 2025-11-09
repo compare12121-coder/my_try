@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476812542881",
+    "project_id": "helloo-myyy",
+    "storage_bucket": "helloo-myyy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476812542881:android:a473abedaab37d6a67c1e0",
+        "android_client_info": {
+          "package_name": "com.example.my_try"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3WHmF6MhEqw8cS7VZwhJ2QY-swcsUxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

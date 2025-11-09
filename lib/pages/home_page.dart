@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Weather App',style: TextStyle(color: Colors.amber,fontSize: 34),),
+        title: const Text('Weather App',),
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
@@ -29,7 +29,9 @@ class HomePage extends StatelessWidget {
         if (state is NoWeatherData) {
           return const Noo();
         } else if (state is HasWeatherData) {
-          return const WeatherInfoBody();
+          return  WeatherInfoBody(
+             
+          );
         } else {
           return const Center(child: Text('Error fetching weather data'));
         }

@@ -5,12 +5,12 @@ import 'package:my_try/models/api_model.dart';
 
 class GetWeatherCubit extends Cubit<WeatherState> {
   GetWeatherCubit() : super(NoWeatherData());
-
+ WeatherModel? weather;
   void getWeatherData({required String city}) async {
     try {
-      WeatherModel? weather;
+      
       weather = await Weatherapi().getWeather(city: city);
-      emit(HasWeatherData());
+      emit(HasWeatherData( weather));
     } catch (e) {
       emit(ErrorWeatherData());
     }
